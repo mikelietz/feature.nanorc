@@ -1,0 +1,11 @@
+## Highlighting syntax for gherkin feature files
+##
+##"\|[[:space:]]*.*[[:space:]]*\|"
+
+syntax "feature" "\.feature$"
+icolor green "^[[:space:]]*(given|when|and|then).*\>"
+icolor green start="\|" end="\|"
+color brightgreen ""[^"]*""
+color ,green "[[:space:]]+$"
+color brightcyan "^@.*"
+color white "\|"
